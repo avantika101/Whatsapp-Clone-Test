@@ -4,6 +4,8 @@ import { Avatar, IconButton } from "@material-ui/core";
 import DonutLargeIcon from '@material-ui/icons/DonutLarge';
 import ChatIcon from "@material-ui/icons/Chat";
 import MoreVertIcon from '@material-ui/icons/MoreVert';
+import InsertEmoticonOutlinedIcon from '@material-ui/icons/InsertEmoticonOutlined';
+import MicOutlinedIcon from '@material-ui/icons/MicOutlined';
 
 function Chat() {
     const [seed, setSeed] = useState("")
@@ -35,10 +37,19 @@ function Chat() {
                 </div>
             </div>
             <div className="chat__body">
-
+                <p className={`chat__message ${true && 'chat__receiver'}`}>
+                    <span className="chat__name">Avantika</span>
+                    hey there  
+                    <span className="chat__timestamp">3:52pm</span>
+                </p>
             </div>
             <div className="chat__footer">
-
+                <InsertEmoticonOutlinedIcon />
+                <form>
+                    <input type="text" />
+                    <button>Send a message</button>
+                </form>
+                <MicOutlinedIcon />
             </div>
         </div>
     )
