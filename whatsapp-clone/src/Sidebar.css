@@ -3,6 +3,7 @@
     flex-direction: column;
     flex: 0.35;
     overflow: scroll;
+    overflow-x: hidden;
 }
 
 .sidebar__search {
