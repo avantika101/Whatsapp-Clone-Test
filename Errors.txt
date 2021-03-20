@@ -1,0 +1,28 @@
+1. Firebase configuration - firebase is not defined
+Solution: import firebase in firebase.js! 
+
+2. You should not use <Link> outside a <Router>
+Solution: Wrapped <Link> in a Router - gives warnings that BrowserRouter is never used but works
+Stackoverflow Ans: https://stackoverflow.com/questions/48640280/you-should-not-use-link-outside-a-router
+
+3. TypeError: Cannot read property 'match' of undefined reactjs
+-Click on RoomName and the Room Name displayed up there changes. Basically, display chats related to a room
+Due to some reason, roomId in Chat.js does not have a default value. Maybe that is the reason for this error
+Wrapped index.js app inside <BrowserRouter>
+Issue - doesn't display chat name at top. Like, at all. Even after clicking.
+Basically that link doesn't know that it needs to route to Chat.js I think.
+
+Added Router, Switch in app.js
+Added a Test Component because Router doesn't seem to be working... what?
+
+4. TypeError: Cannot read property 'location' of undefined
+
+5. Router just isn't working!
+Oh, it's working
+For some reason, defining Sidebar outside the Route path is not working
+room id is still undefined
+
+Thank God I saw tutorials of Node.js :prayer emoji:
+Problem was in the order of Routes.
+OR use 'exact' in the Routes
+
