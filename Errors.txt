@@ -26,3 +26,6 @@ Thank God I saw tutorials of Node.js :prayer emoji:
 Problem was in the order of Routes.
 OR use 'exact' in the Routes
 
+6. Auth is not complete. Firebase auth is enabled.
+Understand Redux, Context API, Data Layers before continuing on this
+
