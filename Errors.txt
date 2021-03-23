@@ -29,3 +29,5 @@ OR use 'exact' in the Routes
 6. Auth is not complete. Firebase auth is enabled.
 Understand Redux, Context API, Data Layers before continuing on this
 
+7. Auth is complete.
+
