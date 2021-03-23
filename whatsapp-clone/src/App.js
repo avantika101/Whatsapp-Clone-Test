@@ -11,6 +11,8 @@ function App() {
   //const [ user, setUser ] = useState(null);
   const [ {user}, dispatch ] = useStateValue();
 
+  console.log("dispatch is : "+dispatch);
+
   console.log("user is: "+user);
   return (
     <div className="app">
