@@ -5,9 +5,12 @@ import Sidebar from './Sidebar';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Test from './Test';
 import Login from './Login';
+import { useStateValue } from './StateProvider';
 
 function App() {
-  const [ user, setUser ] = useState(null);
+  //const [ user, setUser ] = useState(null);
+  const [ {user}, dispatch ] = useStateValue();
+
   console.log("user is: "+user);
   return (
     <div className="app">
