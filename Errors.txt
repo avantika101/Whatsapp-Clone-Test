@@ -31,3 +31,14 @@ Understand Redux, Context API, Data Layers before continuing on this
 
 7. Auth is complete.
 
+8. How many times an app is rendered wrt hooks?
+Built a basic to-do app to understand hooks
+useState
+useEffect
+useReducer
+useContext
+useRef
+-- understand component re-renders 
+
+
+
